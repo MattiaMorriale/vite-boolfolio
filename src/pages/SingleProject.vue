@@ -24,7 +24,7 @@ export default {
 
             if (res.data.success) {
 
-                this.project = res.data.results.data
+                this.project = res.data.project
 
             } else {
                 this.$router.push({ name: 'home' })
