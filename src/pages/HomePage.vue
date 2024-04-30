@@ -1,10 +1,9 @@
 <script>
 
 //importiamo axios
-import { store } from './store';
+import { store } from '../store.js';
 import axios from 'axios';
-import AppNav from './components/AppNav.vue';
-import AppMain from './components/AppMain.vue';
+import AppMain from '../components/AppMain.vue';
 
 export default {
     name: 'HomePage',
@@ -23,7 +22,6 @@ export default {
     },
 
     components: {
-        AppNav,
         AppMain,
     },
 
@@ -62,7 +60,6 @@ export default {
 </script>
 
 <template>
-    <AppNav></AppNav>
     <AppMain></AppMain>
 
     <div class="container py-3">
