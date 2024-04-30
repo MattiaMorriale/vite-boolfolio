@@ -10,7 +10,7 @@ export default {
 </script>
 
 <template>
-    <nav>
+    <nav class="mb-0">
         <div class="container py-3 d-flex align-items-center justify-content-between">
             <div class="logo-container">
                 <span class="fs-1">Portfolio</span>
@@ -27,6 +27,7 @@ export default {
                 </li>
             </ul>
         </div>
+        <hr class="m-0">
     </nav>
 </template>
 

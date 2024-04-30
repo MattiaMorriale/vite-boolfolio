@@ -20,7 +20,7 @@ export default {
 <template>
     <main>
         <div class="container py-5">
-            <ul class="list-unstyled d-flex gap-4 ">
+            <ul class="list-unstyled d-flex justify-content-between flex-wrap row-gap-5">
                 <ProjectCard v-for="currentProject in store.projects" :project="currentProject"></ProjectCard>
             </ul>
         </div>

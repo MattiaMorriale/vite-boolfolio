@@ -69,6 +69,8 @@ export default {
     </div>
 
     <div class="container d-flex justify-content-center ">
+        <h1 class="display-1">Portfolio</h1>
+
         <ul class="d-flex gap-2">
 
             <li v-for="link in apiLinks" v-html="link.label" @click="changeApiPage(link.label)"
@@ -80,6 +82,15 @@ export default {
 </template>
 
 <style scoped>
+h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    font-size: 20vw;
+}
+
 ul {
 
     list-style-type: none;
