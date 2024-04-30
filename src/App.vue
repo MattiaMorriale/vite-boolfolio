@@ -2,12 +2,19 @@
 
 //importiamo axios
 import axios from 'axios';
+import AppNav from './components/AppNav.vue';
+import AppMain from './components/AppMain.vue';
 
 export default {
   data() {
     return {
       baseApiUrl: 'http://127.0.0.1:8000/api',
     }
+  },
+
+  components: {
+    AppNav,
+    AppMain,
   },
 
   mounted() {
@@ -23,11 +30,8 @@ export default {
 </script>
 
 <template>
-  <div class="container btn-outline-primary ">
-    ciao amico mio
-  </div>
+  <AppNav></AppNav>
+  <AppMain></AppMain>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
