@@ -62,6 +62,13 @@ export default {
 <template>
   <AppNav></AppNav>
   <AppMain></AppMain>
+
+  <div class="container py-3">
+  
+    <router-view></router-view>
+    
+  </div>
+
   <div class="container d-flex justify-content-center ">
     <ul class="d-flex gap-2">
   
