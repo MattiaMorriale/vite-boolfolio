@@ -28,7 +28,6 @@ export default {
                 </ul>
             </div>
         </div>
-        <hr class="m-0">
     </footer>
 </template>
 

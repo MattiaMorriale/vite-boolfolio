@@ -38,9 +38,6 @@ export default {
 
   </div>
   <hr>
-
-  <
-
   <AppFooter></AppFooter>
 
 </template>
