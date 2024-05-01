@@ -9,7 +9,7 @@ export default {
 </script>
 
 <template>
-    <li class="card" style="width: 18rem;">
+    <li class="card p-2 " style="width: 18rem;">
         <div class="img-container">
             <img :src="project.image" class="card-img-top" alt="@">
         </div>
