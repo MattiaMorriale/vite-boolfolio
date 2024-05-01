@@ -17,7 +17,7 @@ export default {
             </div>
             <ul class="d-flex list-unstyled gap-5 mb-0 text-uppercase">
                 <li>
-                    Progetti
+                    <router-link :to="{name: 'home'}" class="text-decoration-none text-light ">Progetti</router-link>
                 </li>
                 <li>
                     Chi sono
