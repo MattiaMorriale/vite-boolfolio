@@ -78,7 +78,6 @@ export default {
 
         </ul>
     </div>
-    <hr>
 </template>
 
 <style scoped>

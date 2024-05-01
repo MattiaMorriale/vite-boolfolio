@@ -30,11 +30,14 @@ export default {
 <template>
   <AppNav></AppNav>
 
-  <div class="container py-5">
+  <div class="container py-5 pb-0 ">
 
     <router-view></router-view>
 
   </div>
+  <hr>
+
+  <
 
 </template>
 
