@@ -20,21 +20,14 @@ export default {
 <template>
     <main>
         <div class="container py-5">
-            <ul class="list-unstyled d-flex justify-content-between flex-wrap row-gap-5">
-                <ProjectCard v-for="currentProject in store.projects" :project="currentProject"></ProjectCard>
+            <ul class="list-unstyled ">
+                <li class="row d-flex justify-content-between flex-wrap row-gap-5">
+                    <ProjectCard v-for="currentProject in store.projects" :project="currentProject"></ProjectCard>
+                </li>
             </ul>
         </div>
     </main>
 </template>
 
 <style lang="scss" scoped>
-main {
-    .container {
-        ul {
-            li {
-                width: calc(100% / 3);
-            }
-        }
-    }
-}
 </style>
