@@ -2,6 +2,7 @@
 
 import AppNav from './components/AppNav.vue'
 import AppMain from './components/AppMain.vue'
+import AppFooter from './components/AppFooter.vue'
 
 export default {
   data() {
@@ -12,7 +13,8 @@ export default {
 
   components: {
     AppNav,
-    AppMain
+    AppMain,
+    AppFooter,
   },
 
   mounted() {
@@ -38,6 +40,8 @@ export default {
   <hr>
 
   <
+
+  <AppFooter></AppFooter>
 
 </template>
 

@@ -9,7 +9,7 @@ export default {
 </script>
 
 <template>
-    <li class="card" style="width: 18rem;">
+    <li class="card p-2 " style="width: 18rem;">
         <div class="img-container">
             <img :src="project.image" class="card-img-top" alt="@">
         </div>
@@ -34,6 +34,11 @@ export default {
 
 <style lang="scss" scoped>
 .card {
+    width: 18rem;
+    @media (max-width: 768px) {
+        width: 22rem;
+    }
+
     background: linear-gradient(0deg, #282c34 0%, rgba(17, 0, 32, 0.5) 100%);
     backdrop-filter: blur(7px);
     box-shadow: 0 7px 20px 5px #00000088;
