@@ -2,6 +2,7 @@
 
 import AppNav from './components/AppNav.vue'
 import AppMain from './components/AppMain.vue'
+import AppFooter from './components/AppFooter.vue'
 
 export default {
   data() {
@@ -12,7 +13,8 @@ export default {
 
   components: {
     AppNav,
-    AppMain
+    AppMain,
+    AppFooter,
   },
 
   mounted() {
@@ -30,11 +32,13 @@ export default {
 <template>
   <AppNav></AppNav>
 
-  <div class="container py-5">
+  <div class="container py-5 pb-0 ">
 
     <router-view></router-view>
 
   </div>
+
+  <AppFooter></AppFooter>
 
 </template>
 
