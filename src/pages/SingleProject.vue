@@ -39,7 +39,7 @@ export default {
 
 <template>
 
-    <div v-if="project">
+    <div class="py-5 mt-5" v-if="project">
         <h2>
             {{ project.name }}
         </h2>

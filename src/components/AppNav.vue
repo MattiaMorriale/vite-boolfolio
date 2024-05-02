@@ -10,8 +10,8 @@ export default {
 </script>
 
 <template>
-    <nav class="mb-0 p-3">
-        <div class="container py-3 d-flex align-items-center justify-content-between">
+    <nav class="mb-0">
+        <div class="container p-3 d-flex align-items-center justify-content-between">
             <div class="logo-container d-flex flex-column align-items-center ">
                 <img src="../../public/rocket.png" alt="">
                 <p class="m-0">RocketDev</p>
@@ -55,11 +55,20 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background: linear-gradient(0deg, hsla(274, 6%, 24%, 0.56) 0%,hsl(0, 0%, 0%) 60%);
+    backdrop-filter: blur(15px);
+}
+
 #dropdown {
-    background-color: white;
-    background-image: url(../img/starry-night-sky-background-illustration-2023-11-27-05-06-34-utc.jpg);
-    background-size: contain;
-    filter: brightness(100);
+    background: linear-gradient(0deg, hsla(274, 6%, 24%, 0.56) 0%,hsl(0, 0%, 0%) 60%);
+    backdrop-filter: blur(15px);
 
     ul {
         li {
