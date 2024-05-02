@@ -19,7 +19,8 @@ export default {
 
 <template>
     <main>
-        <div class="container py-5">
+        <div class="container pb-5">
+            <h1 class="pb-5 ps-4" >I MIEI PROGETTI</h1>
             <ul class="list-unstyled ">
                 <li class="row d-flex justify-content-center flex-wrap gap-4 mx-auto ">
                     <ProjectCard v-for="currentProject in store.projects" :project="currentProject"></ProjectCard>

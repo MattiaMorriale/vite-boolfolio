@@ -10,7 +10,7 @@ export default {
 </script>
 
 <template>
-    <nav class="mb-0">
+    <nav class="mb-0 p-3">
         <div class="container py-3 d-flex align-items-center justify-content-between">
             <div class="logo-container d-flex flex-column align-items-center ">
                 <img src="../../public/rocket.png" alt="">
