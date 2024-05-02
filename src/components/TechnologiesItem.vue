@@ -16,11 +16,11 @@ export default {
 
 <template>
     <section class="mb-0">
-        <div class="container py-3 mb-3 d-flex align-items-start justify-content-between">
-            <div class="col-4 pt-5 ">
+        <div class="container py-3 mb-3 d-flex flex-column  align-items-start justify-content-between">
+            <div class="col-12 pt-5 text-center  ">
                 <span class="fs-1">Tecnologie Utilizzate</span>
             </div>
-            <div class="col-8 pt-5 ">
+            <div class="col-12 pt-5 ">
                 <ul class="d-flex flex-wrap justify-content-center list-unstyled gap-5 mb-0 text-uppercase">
                     <li v-for="currentLogo in store.logos">
                         <img :src="'../..' + currentLogo" alt="@" class="logo">
@@ -38,8 +38,8 @@ li{
     padding: 10px;
 
     .logo{
-        width: 75px;
-        height: 75px;
+        width: 60px;
+        height: 60px;
     }
 }
 
