@@ -4,6 +4,7 @@
 import { store } from '../store.js';
 import axios from 'axios';
 import AppMain from '../components/AppMain.vue';
+import TechnologiesItem from '../components/TechnologiesItem.vue'
 
 export default {
     name: 'HomePage',
@@ -23,6 +24,7 @@ export default {
 
     components: {
         AppMain,
+        TechnologiesItem,
     },
 
     mounted() {
@@ -78,6 +80,11 @@ export default {
 
         </ul>
     </div>
+    <hr>
+
+    <TechnologiesItem class="mb-5"></TechnologiesItem>
+
+
 </template>
 
 <style scoped>

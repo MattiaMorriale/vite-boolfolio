@@ -66,7 +66,7 @@ export default {
             position: relative;
 
             &:hover {
-                transform: scale(1.3);
+                transform: scale(1.1);
             }
 
             &::after {
@@ -95,11 +95,7 @@ ul {
         transition: 0.5s;
         cursor: pointer;
         position: relative;
-
-        &:hover {
-            transform: scale(1.5);
-        }
-
+        
         &::after {
                 content: '';
                 position: absolute;
