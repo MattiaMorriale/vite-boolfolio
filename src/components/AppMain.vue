@@ -21,7 +21,7 @@ export default {
     <main>
         <div class="container py-5">
             <ul class="list-unstyled ">
-                <li class="row d-flex justify-content-center flex-wrap gap-3 mx-auto ">
+                <li class="row d-flex justify-content-center flex-wrap gap-4 mx-auto ">
                     <ProjectCard v-for="currentProject in store.projects" :project="currentProject"></ProjectCard>
                 </li>
             </ul>
