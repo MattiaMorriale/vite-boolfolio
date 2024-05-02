@@ -70,8 +70,8 @@ export default {
 
     </div>
 
-    <div class="container d-flex justify-content-center ">
-        <h1 class="display-1">Portfolio</h1>
+    <div class="container d-flex justify-content-center flex-wrap">
+        <img src="../../public/Saturno.png" alt="">
 
         <ul class="d-flex gap-2">
 
@@ -88,13 +88,13 @@ export default {
 </template>
 
 <style scoped>
-h1 {
+img {
     position: absolute;
-    top: 40%;
+    top: 0;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     z-index: -1;
-    font-size: 20vw;
+    width: 95%;
 }
 
 ul {

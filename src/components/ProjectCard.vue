@@ -39,9 +39,9 @@ export default {
         width: 22rem;
     }
 
-    background: linear-gradient(0deg, #282c34 0%, rgba(17, 0, 32, 0.5) 100%);
-    backdrop-filter: blur(7px);
-    box-shadow: 0 7px 20px 5px #00000088;
+    background: linear-gradient(0deg, #41485500 0%, rgba(113, 93, 128, 0.469) 100%);
+    backdrop-filter: blur(2px);
+    box-shadow: 0 7px 20px 5px #00000048;
     position: relative;
 
     .img-container {
