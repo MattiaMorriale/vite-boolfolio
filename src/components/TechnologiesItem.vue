@@ -33,11 +33,7 @@ export default {
 
 <style lang="scss" scoped>
 li{
-    background: linear-gradient(0deg, #41485500 0%, rgba(113, 93, 128, 0.469) 100%);
-    backdrop-filter: blur(2px);
-    box-shadow: 0 7px 20px 5px #00000048;
-
-    border-radius: 10px;
+    
     
     padding: 10px;
 

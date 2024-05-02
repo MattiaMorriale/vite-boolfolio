@@ -12,8 +12,9 @@ export default {
 <template>
     <nav class="mb-0">
         <div class="container py-3 d-flex align-items-center justify-content-between">
-            <div class="logo-container">
-                <span class="fs-1">Portfolio</span>
+            <div class="logo-container d-flex flex-column align-items-center ">
+                <img src="../../public/rocket.png" alt="">
+                <p class="m-0">RocketDev</p>
             </div>
 
             <!-- Default dropstart button -->

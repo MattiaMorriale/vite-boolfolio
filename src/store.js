@@ -6,7 +6,7 @@ export const store = reactive({
   logos: [
     '/public/html.png',
     '/public/css.png',
-    '/public/java-script.png',
+    '/public/js.png',
     '/public/bootstrap.png',
     '/public/sass.png',
     '/public/vite.svg',
