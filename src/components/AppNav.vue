@@ -24,7 +24,8 @@ export default {
                 <div id="dropdown" class="dropdown-menu px-5 py-3">
                     <ul class=" list-unstyled text-uppercase text-center d-flex flex-column gap-3 m-0 fs-5">
                         <li>
-                            <router-link :to="{name: 'home'}" class="text-decoration-none text-light ">Progetti</router-link>
+                            <router-link :to="{ name: 'home' }"
+                                class="text-decoration-none text-light ">Progetti</router-link>
                         </li>
                         <li>
                             Chi sono
@@ -38,7 +39,7 @@ export default {
 
             <ul class="d-none d-md-flex list-unstyled gap-5 mb-0 text-uppercase">
                 <li>
-                    <router-link :to="{name: 'home'}" class="text-decoration-none text-light ">Progetti</router-link>
+                    <router-link :to="{ name: 'home' }" class="text-decoration-none text-light ">Progetti</router-link>
                 </li>
                 <li>
                     Chi sono
@@ -57,7 +58,7 @@ export default {
     background-color: white;
     background-image: url(../img/starry-night-sky-background-illustration-2023-11-27-05-06-34-utc.jpg);
     background-size: contain;
-    filter:brightness(100);
+    filter: brightness(100);
 
     ul {
         li {
@@ -95,25 +96,24 @@ ul {
         transition: 0.5s;
         cursor: pointer;
         position: relative;
-        
-        &::after {
-                content: '';
-                position: absolute;
-                left: 0%;
-                transform: translateX(-50%);
-                bottom: -3px;
-                width: 100%;
-                height: 1px;
-                background-color: white;
-                transform-origin: center;
-                transform: scaleX(0);
-                transition: transform 0.4s ease;
-            }
 
-            &:hover::after {
-                transform: scaleX(1);
-            }
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0%;
+            transform: translateX(-50%);
+            bottom: -3px;
+            width: 100%;
+            height: 1px;
+            background-color: white;
+            transform-origin: center;
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+
+        &:hover::after {
+            transform: scaleX(1);
+        }
     }
 }
-
 </style>

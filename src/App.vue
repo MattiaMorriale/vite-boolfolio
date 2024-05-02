@@ -37,13 +37,8 @@ export default {
     <router-view></router-view>
 
   </div>
-  <hr>
   <AppFooter></AppFooter>
 
 </template>
 
-<style lang="scss" scoped>
-
-
-
-</style>
+<style lang="scss" scoped></style>
