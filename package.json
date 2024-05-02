@@ -13,6 +13,7 @@
     "bootstrap": "^5.3.3",
     "sass": "^1.75.0",
     "vue": "^3.4.21",
+    "vue-awesome-paginate": "^1.1.46",
     "vue-router": "^4.3.2"
   },
   "devDependencies": {
