@@ -97,6 +97,7 @@ export default {
                 :items-per-page="8"
                 :max-pages-shown="2"
                 :on-click="changePage"
+                :hide-prev-next-when-ends="true"
             />
         </ul>
     </div>
