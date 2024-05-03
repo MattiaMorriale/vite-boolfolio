@@ -22,7 +22,7 @@ export default {
             </div>
             <div class="col-12 pt-3">
                 <ul
-                    class="d-flex flex-wrap justify-content-center list-unstyled gap-5 mb-0 text-uppercase py-4 rounded-2">
+                    class="d-flex flex-wrap justify-content-center align-items-center list-unstyled gap-5 mb-0 text-uppercase py-4 rounded-2">
                     <li v-for="currentLogo in store.logos">
                         <img :src="'../..' + currentLogo" alt="@" class="logo">
                     </li>
@@ -40,7 +40,7 @@ li {
 
     .logo {
         width: 60px;
-        height: 60px;
+        height: auto;
     }
 }
 </style>
