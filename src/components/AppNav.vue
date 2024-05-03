@@ -1,11 +1,31 @@
 <script>
+
+import axios from 'axios';
+
 export default {
     name: 'AppNav',
 
     data() {
         return {
+            formData: {
+                name: '',
+                address: '',
+                message: '',
+            }
         }
-    }
+    },
+
+    mounted() {
+
+    },
+
+    methods: {
+        sendContactRequest() {
+            axios.post('http://127.0.0.1:8000/api/new-contact', this.formData).then(res => {
+                console.log(res);
+            });
+        }
+    },
 }
 </script>
 
@@ -56,20 +76,20 @@ export default {
 
                 <div class="offcanvas-body">
 
-                    <form>
+                    <form @submit.prevent="sendContactRequest()">
                         <div class="mb-4">
                             <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" name="name">
+                            <input type="text" class="form-control" id="name" name="name" v-model="formData.name">
                         </div>
 
                         <div class="mb-4">
                             <label for="address" class="form-label">Indirizzo Email</label>
-                            <input type="email" class="form-control" id="address" aria-describedby="emailHelp">
+                            <input type="email" class="form-control" id="address" name="address" aria-describedby="emailHelp" v-model="formData.address">
                             <div id="emailHelp" class="form-text">Non condivideremo la tua email con terzi.</div>
                         </div>
 
                         <div class="form-floating mb-4">
-                            <textarea class="form-control" placeholder="Lascia un commento qui.." id="message" style="height: 100px;"></textarea>
+                            <textarea class="form-control" placeholder="Lascia un commento qui.." id="message" name="message" style="height: 100px;" v-model="formData.message"></textarea>
                             <label for="message">Messaggio</label>
                         </div>
 
