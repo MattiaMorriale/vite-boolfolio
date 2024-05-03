@@ -79,7 +79,7 @@ export default {
                     <label for="message">Messaggio</label>
                 </div>
 
-                <button type="submit" class="btn btn-primary">Invia</button>
+                <button type="submit" class="btn btn-outline-light ">Invia</button>
             </form>
 
         </div>
@@ -160,6 +160,9 @@ ul {
 }
 
 .offcanvas {
+    background: linear-gradient(0deg, hsla(274, 6%, 24%, 0.56) 0%,hsl(0, 0%, 0%) 60%);
+    backdrop-filter: blur(15px);
+
     @media (max-width: 552px) {
         width: 100%;
     }
