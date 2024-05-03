@@ -76,34 +76,41 @@ export default {
 </script>
 
 <template>
-    <AppMain></AppMain>
 
-    <div class="container py-3">
-
-        <router-view></router-view>
-
+    <div v-if="!isLoading">
+        <AppMain></AppMain>
+    
+        <div class="container py-3">
+    
+            <router-view></router-view>
+    
+        </div>
+    
+        <div class="container d-flex justify-content-center flex-wrap">
+            <img class="saturno" src="../../public/Saturno.png" alt="">
+    
+            <ul class="pagination d-flex justify-content-center p-0 m-0 gap-2">
+    
+                <!-- <li v-for="link in apiLinks" v-html="link.label" @click="changeApiPage(link.label)"
+                    :class="link.label == apiPageNumber ? 'active' : ''"></li> -->
+                <vue-awesome-paginate
+                    :total-items="12"
+                    v-model="currentPage"
+                    :items-per-page="8"
+                    :max-pages-shown="2"
+                    :on-click="changePage"
+                    :hide-prev-next-when-ends="true"
+                />
+            </ul>
+        </div>
+        <hr>
+    
+        <TechnologiesItem class="mb-5"></TechnologiesItem>
     </div>
 
-    <div class="container d-flex justify-content-center flex-wrap">
-        <img class="saturno" src="../../public/Saturno.png" alt="">
-
-        <ul class="pagination d-flex justify-content-center p-0 m-0 gap-2">
-
-            <!-- <li v-for="link in apiLinks" v-html="link.label" @click="changeApiPage(link.label)"
-                :class="link.label == apiPageNumber ? 'active' : ''"></li> -->
-            <vue-awesome-paginate
-                :total-items="12"
-                v-model="currentPage"
-                :items-per-page="8"
-                :max-pages-shown="2"
-                :on-click="changePage"
-                :hide-prev-next-when-ends="true"
-            />
-        </ul>
+    <div class="d-flex justify-content-center my-loader" v-else>
+        <div class="loader"></div>
     </div>
-    <hr>
-
-    <TechnologiesItem class="mb-5"></TechnologiesItem>
 
 
 </template>
@@ -150,6 +157,34 @@ export default {
     .active-page:hover {
         background-color: #b1b1b1;
     }
+}
+
+
+.my-loader{
+
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+
+.loader {
+  width: 80px;
+  aspect-ratio: 1;
+  border: 10px solid #0000;
+  box-sizing: border-box;
+  background: 
+    radial-gradient(farthest-side,#fff 98%,#0000) 0    0/20px 20px,
+    radial-gradient(farthest-side,#fff 98%,#0000) 100% 0/20px 20px,
+    radial-gradient(farthest-side,#fff 98%,#0000) 100% 100%/20px 20px,
+    radial-gradient(farthest-side,#fff 98%,#0000) 0 100%/20px 20px,
+    linear-gradient(#fff 0 0) 50%/40px 40px, #000;
+  background-repeat:no-repeat;
+  filter: blur(4px) contrast(10);
+  animation: l12 0.8s infinite;
+}
+@keyframes l12 {
+  100%  {background-position:100% 0,100% 100%,0 100%,0 0,center}
+}
 }
 
 </style>

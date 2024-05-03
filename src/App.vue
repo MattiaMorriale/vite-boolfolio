@@ -1,4 +1,5 @@
 <script>
+import { store } from './store.js';
 
 import AppNav from './components/AppNav.vue'
 import AppMain from './components/AppMain.vue'
@@ -7,7 +8,7 @@ import AppFooter from './components/AppFooter.vue'
 export default {
   data() {
     return {
-
+      store,
     }
   },
 
@@ -23,8 +24,8 @@ export default {
   },
 
   methods: {
-
-  },
+    
+  }
 }
 
 </script>
@@ -38,8 +39,8 @@ export default {
 
   </div>
   <AppFooter></AppFooter>
-
 </template>
 
 <style lang="scss" scoped>
+
 </style>

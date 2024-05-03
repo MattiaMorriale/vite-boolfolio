@@ -180,39 +180,4 @@ export default {
       100%  {background-position:100% 0,100% 100%,0 100%,0 0,center}
     }
 }
-
-//ridimensiono il carosello
-@media (min-width: 992px) and (max-width: 1200px) {
-    
-    #carousel {
-        width: 500px;
-        z-index: 0;
-        
-        img {
-            object-fit: contain;
-        }
-    }
-
-    #description {
-
-        max-width: 400px;
-
-        p {
-            max-width: 400px;
-            font-size: 14px;
-            line-height: 1.8em;
-        }
-
-        h2, h3 {
-            font-size: 20px;
-            text-transform: uppercase;
-        }
-
-        span {
-            font-size: 12px;
-            text-transform: uppercase;
-            font-style: italic;
-        }
-    }
-}
 </style>
