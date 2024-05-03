@@ -30,7 +30,7 @@ export default {
                             Chi sono
                         </li>
                         <li>
-                            Contatti
+                            <router-link :to="{name: 'contact-me'}" class="text-decoration-none text-light ">Contattami</router-link>
                         </li>
                     </ul>
                 </div>
@@ -44,7 +44,7 @@ export default {
                     Chi sono
                 </li>
                 <li>
-                    Contatti
+                    <router-link :to="{name: 'contact-me'}" class="text-decoration-none text-light ">Contattami</router-link>
                 </li>
             </ul>
         </div>
