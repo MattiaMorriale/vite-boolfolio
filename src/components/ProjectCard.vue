@@ -2,9 +2,40 @@
 export default {
     name: 'ProjectCard',
 
+    data() {
+        return {
+            techImages: {
+                html: 'html.png',
+                css: 'css.png',
+                js: 'js.png',
+                bootstrap: 'bootstrap.png',
+                laravel: 'laravel.png',
+                mysql: 'mysql.png',
+                php: 'php.png',
+                sass: 'sass.png',
+                vue: 'vue.png',
+                vite: 'vite.svg' // formato SVG
+            }
+        }
+    },
+
     props: {
         project: Object,
-    }
+    },
+
+    methods: {
+        //trasformo le tecnologie in immagini
+        getImage(techType) {
+
+            let imagePath;
+
+            // Controlla se il tipo di tecnologia ha un'immagine associata
+            if (this.techImages.hasOwnProperty(techType)) {
+                imagePath = (`/public/${this.techImages[techType]}`);
+            }
+            return imagePath;
+        }
+    },
 }
 </script>
 
@@ -16,10 +47,13 @@ export default {
         <div class="card-body p-4 d-flex flex-column justify-content-between ">
             <div class="my-4">
                 <h5 class="card-title">{{ project.name }}</h5>
-                <ul class="d-flex gap-2 list-unstyled">
-                    <li class="badge text-bg-light mb-3" v-for="currentTech in project.technologies">{{
-                        currentTech.type }}</li>
+
+                <ul class="d-flex flex-wrap list-unstyled gap-2 mb-2 text-uppercase">
+                    <li v-for="currentTech in project.technologies" :key="currentTech.type">
+                        <img :src="getImage(currentTech.type)" :alt="currentTech.type" class="mr-1 " style="max-height: 20px;">
+                    </li>
                 </ul>
+
                 <span v-if="project.type" class="d-block text-primary mb-3"> {{ project.type.name }}</span>
             </div>
             <div>
@@ -55,7 +89,7 @@ export default {
 
     }
 
-    &:hover img {
+    &:hover .img-container img {
         transform: scale(1.2);
     }
 
