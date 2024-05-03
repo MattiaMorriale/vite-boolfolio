@@ -32,7 +32,7 @@ export default {
                             Chi sono
                         </li>
                         <li>
-                            Contatti
+                            <span type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Contattami</span>
                         </li>
                     </ul>
                 </div>
@@ -46,9 +46,40 @@ export default {
                     Chi sono
                 </li>
                 <li>
-                    Contatti
+                    <span type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Contattami</span>
                 </li>
             </ul>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title text-uppercase fw-bold" id="offcanvasRightLabel">Contattami</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body">
+
+                    <form>
+                        <div class="mb-4">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" name="name">
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="address" class="form-label">Indirizzo Email</label>
+                            <input type="email" class="form-control" id="address" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">Non condivideremo la tua email con terzi.</div>
+                        </div>
+
+                        <div class="form-floating mb-4">
+                            <textarea class="form-control" placeholder="Lascia un commento qui.." id="message" style="height: 100px;"></textarea>
+                            <label for="message">Messaggio</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Invia</button>
+                    </form>
+
+                </div>
+            </div>
         </div>
         <hr class="m-0">
     </nav>
@@ -126,4 +157,11 @@ ul {
         }
     }
 }
+
+.offcanvas {
+    @media (max-width: 552px) {
+        width: 100%;
+    }
+}
+
 </style>
