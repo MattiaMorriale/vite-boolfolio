@@ -88,7 +88,7 @@ nav {
                 bottom: -3px;
                 width: 100%;
                 height: 1px;
-                background-color: white;
+                background-color: rgb(255, 255, 255);
                 transform-origin: center;
                 transform: scaleX(0);
                 transition: transform 0.4s ease;
@@ -114,8 +114,8 @@ ul {
             transform: translateX(-50%);
             bottom: -3px;
             width: 100%;
-            height: 1px;
-            background-color: white;
+            height: 2px;
+            background-color: #cc34e1;
             transform-origin: center;
             transform: scaleX(0);
             transition: transform 0.4s ease;

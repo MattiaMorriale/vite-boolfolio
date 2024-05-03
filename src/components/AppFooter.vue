@@ -38,6 +38,8 @@ export default {
 
 i{
     font-size: 20px;
+
+    cursor: pointer;
 }
 
 </style>
