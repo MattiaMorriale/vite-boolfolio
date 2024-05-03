@@ -67,40 +67,13 @@ export default {
 
 <template>
 
-    <div id="project" class="d-block d-lg-flex py-5 mt-5" v-if="project">
+    <div id="project" class="d-block d-lg-flex pt-5 mt-5" v-if="project">
         
         <!-- <img :src="project.image" class="img-fluid" alt="..."> -->
 
         <!-- carosello di immagini -->
-        <div id="carousel" class="carousel slide carousel-fade my-4 mx-auto mx-lg-0" data-bs-ride="carousel" data-bs-touch="true">
-            
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="5000">
-                    <img :src="project.image" class="d-block w-100" alt="...">
-                </div>
-
-                <div class="carousel-item" data-bs-interval="2000">
-                    <img :src="project.image" class="d-block w-100" alt="...">
-                </div>
-
-                <div class="carousel-item">
-                    <img :src="project.image" class="d-block w-100" alt="...">
-                </div>
-            </div>
-
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            </button>
-
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            </button>
+        <div class="img-box">
+            <img :src="project.image" class="d-block w-100" alt="...">
         </div>
 
         <!-- testo descrittivo -->
@@ -148,7 +121,7 @@ export default {
     gap: 30px;
     
     
-    #carousel {
+    .img-box {
         max-width: 700px;
         z-index: 0;
         
