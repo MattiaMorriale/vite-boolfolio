@@ -19,14 +19,11 @@ export default {
 
         <div class="container px-5 py-3 d-flex ">
             <div class="col-6 d-flex justify-content-start ">
-                <span>Powered By Mattia Morriale</span>
+                <span><strong>POWERED BY:</strong> Mattia Morriale</span>
             </div>
             <div class="col-6 d-flex justify-content-end gap-3">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-x-twitter"></i>
-                <i class="fa-brands fa-github"></i>
-                <i class="fa-brands fa-linkedin"></i>
+                <a class="text-decoration-none text-light" href="https://github.com/MattiaMorriale" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a class="text-decoration-none text-light" href="https://linkedin.com/in/mattia-morriale" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
 
@@ -37,9 +34,13 @@ export default {
 <style lang="scss" scoped>
 
 i{
-    font-size: 20px;
+    font-size: 30px;
 
     cursor: pointer;
+
+    &:hover{
+        color: #FFBD59;
+    }
 }
 
 </style>

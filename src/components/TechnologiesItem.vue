@@ -18,7 +18,7 @@ export default {
     <section class="mb-0">
         <div class="container py-3 mb-3 d-flex flex-column  align-items-start justify-content-between">
             <div class="col-12 pt-5 ps-4 text-center">
-                <span class="fs-4">Tecnologie Utilizzate</span>
+                <span class="fs-4">TECNOLOGIE APPRESE</span>
             </div>
             <div class="col-12 pt-3">
                 <ul

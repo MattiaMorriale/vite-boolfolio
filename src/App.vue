@@ -33,7 +33,7 @@ export default {
 <template>
   <AppNav></AppNav>
 
-  <div class="container py-5 pb-0 ">
+  <div class="main-container container py-5 pb-0 ">
 
     <router-view></router-view>
 
@@ -42,5 +42,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-
+.main-container {
+  min-height: calc(100vh - 121px);
+}
 </style>

@@ -5,16 +5,16 @@ export default {
     data() {
         return {
             techImages: {
-                html: 'html.png',
-                css: 'css.png',
-                js: 'js.png',
-                bootstrap: 'bootstrap.png',
-                laravel: 'laravel.png',
-                mysql: 'mysql.png',
-                php: 'php.png',
-                sass: 'sass.png',
-                vue: 'vue.png',
-                vite: 'vite.svg' // formato SVG
+                HTML5: 'html.png',
+                CSS3: 'css.png',
+                JS: 'js.png',
+                BOOTSTRAP: 'bootstrap.png',
+                LARAVEL: 'laravel.png',
+                MYSQL: 'mysql.png',
+                PHP: 'php.png',
+                SASS: 'sass.png',
+                VUE: 'vue.png',
+                VITE: 'vite.svg' // formato SVG
             }
         }
     },
@@ -40,27 +40,13 @@ export default {
 </script>
 
 <template>
-    <li class="card p-2 " style="width: 18rem;">
-        <div class="img-container">
-            <img :src="project.image" class="card-img-top" alt="@">
-        </div>
-        <div class="card-body p-4 d-flex flex-column justify-content-between ">
-            <div class="my-4">
-                <h5 class="card-title">{{ project.name }}</h5>
-
-                <ul class="d-flex flex-wrap list-unstyled gap-2 mb-2 text-uppercase">
-                    <li v-for="currentTech in project.technologies" :key="currentTech.type">
-                        <img :src="getImage(currentTech.type)" :alt="currentTech.type" class="mr-1 " style="max-height: 20px;">
-                    </li>
-                </ul>
-
-                <span v-if="project.type" class="d-block text-primary mb-3"> {{ project.type.name }}</span>
+    <li class="card p-0 rounded-2" style="width: 25rem;">
+        <router-link :to="{ name: 'single-project', params: { slug: project.slug } }">
+            <div class="img-container">
+                <img :src="'http://localhost:8000/storage/' + project.image"  class="card-img-top rounded-2" alt="@">
+                <h5>{{ project.name }}</h5>
             </div>
-            <div>
-                <router-link :to="{ name: 'single-project', params: { slug: project.slug } }"
-                    class="btn btn-outline-light btn-outline">Vai al progetto</router-link>
-            </div>
-        </div>
+        </router-link>
     </li>
 
 
@@ -68,11 +54,9 @@ export default {
 
 <style lang="scss" scoped>
 .card {
-    width: 18rem;
     @media (max-width: 768px) {
         width: 22rem;
     }
-
     background: linear-gradient(0deg, #41485500 0%, rgb(95, 86, 103) 100%);
     backdrop-filter: blur(2px);
     box-shadow: 0 7px 20px 5px #00000048;
@@ -81,9 +65,21 @@ export default {
     .img-container {
 
         overflow: hidden;
+        position: relative;
 
         img {
             transition: transform 0.3s ease;
+        }
+
+        h5{
+            position: absolute;
+            z-index: 99;
+            bottom:  5px;
+            left: 5px;
+
+            margin: 0;
+
+            color: white;
         }
 
 
@@ -93,10 +89,5 @@ export default {
         transform: scale(1.2);
     }
 
-    // &:hover {
-    //     transition: transform 0.3s ease;
-    //     background: linear-gradient(0deg, #4f5560 0%, rgba(17, 0, 32, 0.5) 100%);
-
-    // }
 }
 </style>

@@ -33,8 +33,7 @@ export default {
     <nav class="mb-0">
         <div class="container p-3 d-flex align-items-center justify-content-between">
             <div class="logo-container d-flex flex-column align-items-center ">
-                <img src="../../public/rocket.png" alt="">
-                <p class="m-0">RocketDev</p>
+                <img src="../../logo.png" alt="">
             </div>
 
             <!-- Default dropstart button -->
@@ -63,7 +62,7 @@ export default {
                     <router-link :to="{ name: 'home' }" class="text-decoration-none text-light ">Progetti</router-link>
                 </li>
                 <li>
-                    Chi sono
+                    <router-link :to="{name: 'iam'}" class="text-decoration-none text-light ">Chi Sono</router-link>
                 </li>
                 <li>
                     <span type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Contattami</span>
@@ -116,6 +115,13 @@ nav {
     z-index: 1;
     background: linear-gradient(0deg, hsla(274, 6%, 24%, 0.56) 0%,hsl(0, 0%, 0%) 60%);
     backdrop-filter: blur(15px);
+
+    .logo-container{
+        img{
+            height: 50px;
+            width: 50px;
+        }
+    }
 }
 
 #dropdown {
@@ -167,7 +173,7 @@ ul {
             bottom: -3px;
             width: 100%;
             height: 2px;
-            background-color: #cc34e1;
+            background-color: #FFBD59;
             transform-origin: center;
             transform: scaleX(0);
             transition: transform 0.4s ease;

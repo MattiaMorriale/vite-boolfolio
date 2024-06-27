@@ -87,8 +87,6 @@ export default {
         </div>
     
         <div class="container d-flex justify-content-center flex-wrap">
-            <img class="saturno" src="../../public/Saturno.png" alt="">
-    
             <ul class="pagination d-flex justify-content-center p-0 m-0 gap-2">
     
                 <!-- <li v-for="link in apiLinks" v-html="link.label" @click="changeApiPage(link.label)"
@@ -105,7 +103,7 @@ export default {
         </div>
         <hr>
     
-        <TechnologiesItem class="mb-5"></TechnologiesItem>
+
     </div>
 
     <div class="d-flex justify-content-center my-loader" v-else>
@@ -116,16 +114,6 @@ export default {
 </template>
 
 <style lang="scss">
-
-.saturno {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: -1;
-    width: 95%;
-}
-
 .pagination {
 
     list-style-type: none;

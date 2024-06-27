@@ -55,7 +55,7 @@ export default {
             // Controlla se il tipo di tecnologia ha un'immagine associata
             if (this.techImages.hasOwnProperty(techType)) {
 
-                imagePath = (`/public/${this.techImages[techType]}`);
+                imagePath = (`/${this.techImages[techType]}`);
             }
 
             return imagePath;
@@ -73,7 +73,7 @@ export default {
 
         <!-- carosello di immagini -->
         <div class="img-box">
-            <img :src="project.image" class="d-block w-100" alt="...">
+            <img :src="'http://localhost:8000/storage/' + project.image" class="d-block w-100" alt="...">
         </div>
 
         <!-- testo descrittivo -->
