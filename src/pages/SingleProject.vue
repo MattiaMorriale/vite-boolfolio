@@ -13,16 +13,16 @@ export default {
             apiBaseUrl: 'http://127.0.0.1:8000/api',
 
             techImages: {
-                html: 'html.png',
-                css: 'css.png',
-                js: 'js.png',
-                bootstrap: 'bootstrap.png',
-                laravel: 'laravel.png',
-                mysql: 'mysql.png',
-                php: 'php.png',
-                sass: 'sass.png',
-                vue: 'vue.png',
-                vite: 'vite.svg' // formato SVG
+                HTML5: 'html.png',
+                CSS3: 'css.png',
+                JS: 'js.png',
+                BOOTSTRAP: 'bootstrap.png',
+                LARAVEL: 'laravel.png',
+                MYSQL: 'mysql.png',
+                PHP: 'php.png',
+                SASS: 'sass.png',
+                VUE: 'vue.png',
+                VITE: 'vite.svg' // formato SVG
             }
         }
     },

@@ -19,7 +19,7 @@ export default {
 
         <div class="container px-5 py-3 d-flex ">
             <div class="col-6 d-flex justify-content-start ">
-                <span>©2024 Mattia Morriale, Pietro Antonio Nini, Vincenzo Sergi</span>
+                <span>Powered By Mattia Morriale</span>
             </div>
             <div class="col-6 d-flex justify-content-end gap-3">
                 <i class="fa-brands fa-facebook"></i>
