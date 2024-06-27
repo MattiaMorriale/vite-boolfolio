@@ -101,7 +101,6 @@ export default {
                 />
             </ul>
         </div>
-        <hr>
     
 
     </div>
